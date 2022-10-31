@@ -1,5 +1,29 @@
-<ul>
-  <li><a href="{{ get_url(path="@/about.md") }}">About</a></li>
-  <li><a href="{{ get_url(path="@/blog/index.md") }}">Blog</a></li>
-  <li><a href="{{ get_url(path="@/projects/index.md") }}">Projects</a></li>
-</ul>
+<div class="container">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        James Liu
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="{{ get_url(path="@/about.md") }}">
+          About
+        </a>
+        <a class="navbar-item" href="{{ get_url(path="@/blog/index.md") }}">
+          Blog
+        </a>
+        <a class="navbar-item" href="{{ get_url(path="@/projects/index.md") }}">
+          Projects
+        </a>
+      </div>
+    </div>
+  </nav>
+</div>
