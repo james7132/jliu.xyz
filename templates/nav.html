@@ -2,7 +2,7 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        James Liu
+        {{ config.extra.site_name | upper() }}
       </a>
 
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -23,6 +23,11 @@
         <a class="navbar-item" href="{{ get_url(path="@/projects/index.md") }}">
           Projects
         </a>
+        <div class="buttons">
+          <a class="button is-primary" href="https://github.com/sponsors/james7132">
+            Support
+          </a>
+        </div>
       </div>
     </div>
   </nav>

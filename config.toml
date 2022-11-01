@@ -12,3 +12,6 @@ feed_filename = "atom.xml"
 
 [markdown]
 highlight_code = true
+
+[extra]
+site_name = "James Liu"
