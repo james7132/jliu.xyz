@@ -11,7 +11,7 @@ jobs:
       - name: Mark repo as safe directory
         run: git config --global --add safe.directory /github/workspace/sass/vendor/bulma
       - name: build_and_deploy
-        uses: shalzz/zola-deploy-action@v0.17.1
+        uses: james7132/zola-deploy-action@master
         env:
           # Target branch
           PAGES_BRANCH: gh-pages
