@@ -1,5 +1,5 @@
-<div class="container">
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
         {{ config.extra.site_name | upper() }}
@@ -17,18 +17,18 @@
         <a class="navbar-item" href="{{ get_url(path="@/about.md") }}">
           About
         </a>
-        <a class="navbar-item" href="{{ get_url(path="@/blog/index.md") }}">
+        <a class="navbar-item" href="{{ get_url(path="@/blog/_index.md") }}">
           Blog
         </a>
         <a class="navbar-item" href="{{ get_url(path="@/projects/index.md") }}">
           Projects
         </a>
         <div class="buttons">
-          <a class="button is-primary" href="https://github.com/sponsors/james7132">
+          <a class="button is-dark" href="https://github.com/sponsors/james7132">
             Support
           </a>
         </div>
       </div>
     </div>
-  </nav>
-</div>
+  </div>
+</nav>

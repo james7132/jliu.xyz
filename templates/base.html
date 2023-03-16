@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ get_url(path="index.css", cachebust=true) }}"/>
+    <title>{{ config.title }}</title>
+  </head>
+  <body class="is-family-monospace">
+    {% include "nav.html" %}
+    {% block content %}
+    {% endblock content %}
+    {% include "footer.html" %}
+  </body>
+</html>

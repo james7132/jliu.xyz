@@ -1,15 +1,41 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ get_url(path="index.css", cachebust=true) }}"/>
-    <title>{{ config.title }}</title>
-  </head>
-  <body>
-    {% include "nav.html" %}
-    {% block content %}
-    {% endblock content %}
-    {% include "footer.html" %}
-  </body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+  <section class="hero is-dark is-medium">
+    <div class="hero-body container">
+      <p class="title">
+        {{ config.extra.site_name | upper() }}
+      </p>
+      <p class="subtitle">
+        ML/Software engineer, open source developer, investor
+      </p>
+      <a href="https://github.com/james7132" class="button is-rounded is-light is-small is-outlined">
+        GitHub
+      </a>
+      <a href="https://twitter.com/james7132" class="button is-rounded is-light info is-small is-outlined">
+        Twitter
+      </a>
+      <a href="https://www.linkedin.com/in/jamessliu" class="button is-rounded is-light is-small is-outlined">
+        LinkedIn
+      </a>
+    </div>
+  </section>
+  <section class="section is-black container">
+    <h1 class="title">Bevy Engine</h1>
+    <h2 class="subtitle">
+      A refreshingly simple data-driven game engine built in Rust
+    </h2>
+  </section>
+  <section class="section is-black container">
+    <h1 class="title">Bevy Engine</h1>
+    <h2 class="subtitle">
+      A refreshingly simple data-driven game engine built in Rust
+    </h2>
+  </section>
+  <section class="section is-black container">
+    <h1 class="title">Bevy Engine</h1>
+    <h2 class="subtitle">
+      A refreshingly simple data-driven game engine built in Rust
+    </h2>
+  </section>
+{% endblock content %}
