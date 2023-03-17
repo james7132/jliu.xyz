@@ -2,12 +2,8 @@
 import { defineConfig, presets } from "sponsorkit";
 
 export default defineConfig({
+  formats: ['svg'],
   tiers: [
-    {
-      title: "Past Sponsors",
-      duration: -1,
-      preset: presets.xs,
-    },
     {
       title: "Sponsors",
       preset: presets.small,
