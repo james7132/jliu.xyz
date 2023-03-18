@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ get_url(path="index.css", cachebust=true) }}"/>
     <title>{{ config.title }}</title>
+    {% include "og_tags.html" %}
   </head>
   <body class="is-family-monospace">
     {% include "nav.html" %}

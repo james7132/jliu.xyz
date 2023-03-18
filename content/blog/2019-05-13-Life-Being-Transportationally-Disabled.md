@@ -2,7 +2,6 @@
 title = "Life being Transportationally Disabled"
 tags = []
 +++
-
 It's 2019. For decades, the United States has had the world's most expansive
 road system. For an American, it is nearly unthinkable to live without a car to
 ferry yourself from place to place. For example, in my birth city of Marietta,
