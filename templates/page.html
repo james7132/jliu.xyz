@@ -2,18 +2,29 @@
 
 {% block content %}
   <section class="hero is-dark is-small">
-    <div class="hero-body container">
+    <div class="hero-body container has-text-centered">
       <p class="title">
         {{ page.title }}
       </p>
-      {% if page.description %}
+      {% if page.date or page.updateDate or page.description %}
         <p class="subtitle">
+          {% if page.date or page.updateDate %}
+            {% if page.date %}
+              {{ page.date | date(format="%B %d %Y") }}
+            {% endif %}
+            {% if page.updateDate %}
+              (Updated {{ page.updateDate | date(format="%B %d %Y") }})
+            {% endif %}
+            {% if page.description %}
+              |
+            {%endif %}
+          {% endif %}
           {{ page.description }}
         </p>
       {% endif %}
     </div>
   </section>
-  <section class="container post content">
+  <section class="section container post content">
     <p>{{ page.content | safe }}</p>
   </section>
 {% endblock content %}

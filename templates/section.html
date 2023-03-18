@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div class="container">
+  <section class="section container">
     <ul>
-      {% for pages in section.pages %}
+      {% for page in section.pages %}
         <li>
-          <em><a href="{{ page.permalink }}"> {{ page.title }}</a></em>
           <span>{{ page.date | date(format="%Y-%m-%d") }}</span>
+          <em><a href="{{ page.permalink }}"> {{ page.title }}</a></em>
         </li>
       {% endfor %}
     </ul>
-  </div>
+  </section>
 {% endblock content %}
