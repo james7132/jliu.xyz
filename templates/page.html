@@ -24,9 +24,20 @@
       {% endif %}
     </div>
   </section>
-  <section class="section container post content">
-    <p>{{ page.content | safe }}</p>
-    <!-- Utterance commetns -->
+  {% if page.extra.use_toc %}
+    <section class="section container">
+      <div class="columns">
+        <div class="column content is-one-fifth">
+          {% include "toc.html" %}
+        </div>
+        <div class="column content is-four-fifths">
+          <p>{{ page.content | safe }}</p>
+        </div>
+      </div>
+  {% else %}
+    <section class="section container post content">
+      <p>{{ page.content | safe }}</p>
+  {% endif %}
     <script src="https://utteranc.es/client.js"
             repo="james7132/jliu.xyz"
             issue-term="og:title"
@@ -36,5 +47,4 @@
             async>
     </script>
   </section>
-
 {% endblock content %}
