@@ -1,5 +1,8 @@
 +++
 title = "About Me"
+
+[extra]
+disable_comments = true
 +++
 
 I'm James Liu, a software engineer. Currently living in the San Francisco Bay
