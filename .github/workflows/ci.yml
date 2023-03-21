@@ -1,10 +1,16 @@
 # On every push this script is executed
-on: [push, workflow_dispatch]
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  # Rebuild at 12 Midnight every day
+  cron: "0 * * *"
+
 name: Build and deploy GH Pages
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
     steps:
       - name: checkout
         uses: actions/checkout@v3
