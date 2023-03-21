@@ -7,10 +7,12 @@
     <title>{{ config.title }}</title>
     {% include "og_tags.html" %}
   </head>
-  <body class="is-family-monospace">
-    {% include "nav.html" %}
-    {% block content %}
-    {% endblock content %}
+  <body class="is-family-monospace is-fullheight">
+    <div class="header">
+      {% include "nav.html" %}
+      {% block content %}
+      {% endblock content %}
+    </div>
     {% include "footer.html" %}
   </body>
 </html>

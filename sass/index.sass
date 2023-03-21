@@ -133,7 +133,9 @@ $control-height: 2.5em
 @import "./_vendor/bulma/sass/grid/columns"
 //@import "./_vendor/bulma/sass/helpers/_all"
 @import "./_vendor/bulma/sass/helpers/color"
+@import "./_vendor/bulma/sass/helpers/spacing"
 @import "./_vendor/bulma/sass/helpers/typography"
+@import "./_vendor/bulma/sass/helpers/flexbox"
 @import "./_vendor/bulma/sass/layout/_all"
 
 nav
@@ -143,3 +145,8 @@ nav
   display: block
   margin-left: auto
   margin-right: auto
+
+html, body
+  display: flex
+  flex-direction: column
+  height: 100vh
