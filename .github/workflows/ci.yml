@@ -5,7 +5,8 @@ on:
       - main
   workflow_dispatch:
   # Rebuild at 12 Midnight every day
-  cron: "0 * * *"
+  schedule:
+    - cron: "0 * * *"
 
 name: Build and deploy GH Pages
 jobs:
