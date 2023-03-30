@@ -33,7 +33,7 @@ jobs:
       - run: mv sponsorkit/sponsors.svg content
 
       - name: build_and_deploy
-        uses: james7132/zola-deploy-action@patch-2
+        uses: shalzz/zola-deploy-action@v0.17.2
         env:
           # Target branch
           PAGES_BRANCH: gh-pages
