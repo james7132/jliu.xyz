@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://jliu.xyz/index.css?h=6026fd6f4864615e04ca"/>
+    <title>James Liu</title>
+    
+
+  <meta content="Automated Game Deployment" property="og:title">
+
+
+
+  <meta content="article" property="og:type">
+
+
+
+
+
+
+
+  <meta content="2017-06-09T00:00:00+00:00" property="article:published_time">
+  <meta content="https://jliu.xyz/about" property="article:author">
+
+
+
+
+<!---->
+
+  </head>
+  <body class="is-family-monospace is-fullheight">
+    <div class="header">
+      <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item is-family-code is-size-4 has-text-success" href="/">
+        ~> jliu
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="buttons">
+          <a class="button is-dark" href="https://jliu.xyz/about/">
+            About
+          </a>
+          <a class="button is-dark" href="https://jliu.xyz/blog/">
+            Blog
+          </a>
+          <a class="button is-dark" href="https://jliu.xyz/projects/">
+            Projects
+          </a>
+          <a class="button is-danger" href="https://github.com/sponsors/james7132">
+            Support
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+      
+  <section class="hero is-dark is-small">
+    <div class="hero-body container has-text-centered">
+      <p class="title">
+        Automated Game Deployment
+      </p>
+      
+        <p class="subtitle">
+          
+            
+              June 09 2017
+            
+            
+            
+          
+          
+        </p>
+      
+    </div>
+  </section>
+  
+    <section class="section container post content">
+      <p><p>A good game is often built on the solid feedback from playtesters. The tighter
+the feedback loop for a game, whether it be in development or production, the
+faster the developers can collect and iterate on feedback and bug reports.</p>
+<p>Most game devs in the beginning will do periodic builds after long periods of
+isolated development, asking their testers to download the whole game repeatedly
+to test fixes and updates. While this works initially, this takes signifigant
+focus from the developer to create builds and distribute them manually to the testers. This methodology is also flawed when the game is released. Bugs will inevitably pop up: telling players who have already spent time to download a
+potentially large (1-5GB+) game each time there is a minor update is simply
+unacceptable. For indie developers, you could probably use
+Steam or similar services to patch and deploy new changes; however, many of
+these services can be <a href="http://kotaku.com/5884842/wait-it-costs-40000-to-patch-a-console-game">prohibitively
+expensive</a>
+for small indie studios to use. For doujin developers who may or may not be
+creating derivative works without the luxury of these services, we're more or
+less on our own: there is no exisitng support structure for this kind of
+service.</p>
+<p>To remedy these problems, we will apply the principles of <strong>continuous
+integration</strong> and <strong>continuous deployment</strong>.  The end goal is to produce an
+automated pipeline: when a developer makes a change, the game is
+built, tested, and deployed to player's desktops and
+browsers. Spending time to manually do all of the following is simply draining
+time you could be spending improving your game.</p>
+<h1 id="basic-setup">Basic Setup</h1>
+<p>At it's core, this automated pipeline needs four things: <strong>a queryable source
+control repository</strong>, <strong>an automated build system</strong>, <strong>a deployment web server</strong>
+, and a <strong>client side launcher/updater</strong>.</p>
+<p>The automated build system will listen to source control for changes. When
+notified, it will automatically start building your game in accordance to your
+specifications. If the build and tests succeed, the goal is to notify the
+deployment server to make the built artifacts publicly available. The client
+launcher then checks if the game files are outdated at launch, and updates the
+game as needed.</p>
+<h2 id="source-control">Source Control</h2>
+<p>It all begins with the source control. Any good developer worth their salt,
+makes sure to version control their work. I won't go too much into detail as
+there are entire books and methodologies written about good source control.
+For the sake of this article, the only hard requirement is that the source
+control service either can automatically notify 3rd parties about pushed
+updates, or can be periodically queried for changes. There are plenty of services
+out there that can satisfy requirement: <a href="https://github.com">GitHub</a>,
+<a href="https://bitbucket.com">BitBucket</a>, <a href="https://gitlab.com">GitLab</a>, <a href="https://aws.amazon.com/codecommit/">AWS
+CodeCommit</a>, etc. Simply choose one that
+suits your needs and push your source to a repository. For my case, <a href="https://github.com/HouraiTeahouse/FantasyCrescendo">my
+project</a> lives in a Github
+repository.</p>
+<p>NOTE: Most of these services are free for open source software, while putting a
+limit on private use. If you wish to keep your game closed source, there will be
+costs involved at this stage.</p>
+<h2 id="automatic-builds-continuous-integration">Automatic Builds (Continuous Integration)</h2>
+<p>The next step is to trigger automatic builds based on source control changes.
+This part also usually involves simply choosing the right service for your game.
+There is <a href="https://www.appveyor.com">AppVeyor</a> (Windows) and
+<a href="https://travis-ci.org">TravisCI</a> (macOS and Linux) for free and open source
+projects. If you cannot use either for whatever reason, you can always roll your
+own instance via <a href="https://jenkins.io/index.html">Jenkins</a> or
+<a href="http://buildbot.net/">BuildBot</a>. For Unity3D games, I strongly recommend
+<a href="https://build.cloud.unity3d.com">Unity Cloud Build</a> as setting up a Unity build
+enviroment in any of these other CI systems can be very slow and costly.</p>
+<p>NOTE: Again most of these services are free for open source software, if your
+game is closed source, be prepared to pay up some money, or you may need to do
+additional configuration so that these services have the proper authentication
+to access your source control.</p>
+<h2 id="automatic-deploymment">Automatic Deploymment</h2>
+<p>You now have a automatic stream of game builds coming in now. Now comes the
+hard part: exposing these files in a public manner for the client to query
+against. To my knowledge, there is no public free service that does this: so I
+rolled <a href="https://github.com/HouraiTeahouse/HouraiDeploy">my own</a>. HouraiDeploy is
+a tiny Flask web app that does the following:</p>
+<ul>
+<li>Expose a HTTP endpoint for receiving notifications from automatic deployment</li>
+<li>On being notified, it either:
+<ul>
+<li>Clones a copy of the source control for itself, and rebuilds the project
+locally using the same build process used in the CI build. This is for
+security, as it ensures others cannot upload malicious &quot;build artifacts&quot;
+that ultimately will end up executed on player's computers.</li>
+<li>Download copies of build artifacts from trusted parties. This is usually
+used when the build process is either too complex or too computationally
+intensive to do locally (i.e. Unity3D builds).</li>
+</ul>
+</li>
+<li>Upon obtaining the files, it places them in a location accessible by a
+<a href="https://www.nginx.com/resources/wiki/">nginx static file server</a>, which then
+serves the files to remote clients.</li>
+<li>It then generates an <strong>index file</strong> for clients to query. More details down
+below.</li>
+</ul>
+<p>For added security, HouraiDeploy also checks for an privately generated access
+token in the HTTP request. These tokens are only stored on the host itself, and
+as encrypted enviroment variables on the continuous integration system's end.</p>
+<h3 id="generating-a-index">Generating a Index</h3>
+<p>The updater works effectively by checking each individual file against a remote
+index. This index includes the file's path, size, and SHA-256 hash (though any
+hash would work, it's advised to use SHA-2 or better. As MD5 and SHA-1 have been
+known to be cracked and/or faked before). The hash is a quick and simple way to
+check if files are identical. If the file exists at a path exists locally, and
+has a matching size and file hash, it's almost 100% guarenteed that the files
+are identical, and thus does not need to be redownloaded. If the hash changes,
+we simply update the file by downloading the remote version and replacing the
+local one with it. For HouraiDeploy, we get the file hashes like so:</p>
+<pre data-lang="python" style="background-color:#2b303b;color:#c0c5ce;" class="language-python "><code class="language-python" data-lang="python"><span style="color:#b48ead;">from </span><span>hashlib </span><span style="color:#b48ead;">import </span><span>sha256
+</span><span style="color:#b48ead;">def </span><span style="color:#8fa1b3;">hash_file</span><span>(</span><span style="color:#bf616a;">path</span><span>, </span><span style="color:#bf616a;">block_size</span><span>=</span><span style="color:#d08770;">65536</span><span>):
+</span><span>  hahser = </span><span style="color:#bf616a;">sha256</span><span>()
+</span><span>  </span><span style="color:#b48ead;">with </span><span style="color:#96b5b4;">open</span><span>(path, &#39;</span><span style="color:#a3be8c;">r</span><span>&#39;) </span><span style="color:#b48ead;">as </span><span>file_obj:
+</span><span>    </span><span style="color:#b48ead;">for </span><span>block </span><span style="color:#b48ead;">in </span><span style="color:#96b5b4;">iter</span><span>(</span><span style="color:#b48ead;">lambda</span><span>: file_source.</span><span style="color:#bf616a;">read</span><span>(block_size), </span><span style="color:#b48ead;">b</span><span>&#39;&#39;):
+</span><span>      hasher.</span><span style="color:#bf616a;">update</span><span>(block)
+</span><span>  </span><span style="color:#b48ead;">return </span><span>hasher.</span><span style="color:#bf616a;">hexdigest</span><span>()
+</span></code></pre>
+<p>This method also minimizes the amount of data needed to update the game: a
+index with ~120 files, irrespective of file size, is only 20kb, saving you the
+bandwidth cost and the player's time from needing to serve or download
+unnecessary data.</p>
+<p>We generate one of these indexes for the game each time a new build is
+completed, and it is saved as a file right next to the game data.</p>
+<p>An example of such a index file can be seen
+<a href="https://patch.houraiteahouse.net/fantasy-crescendo/develop/Linux/index.json">here</a>.</p>
+<h2 id="client-side-launcher">Client Side Launcher</h2>
+<p>This one is a tough one: we want to create an efficent cross-platform
+downloader with a responsive UI that can work with the index and files we
+generate. Obviously nothing will work off the bat with the freshly created
+Hourai Deploy, so I created
+<a href="https://github.com/HouraiTeahouse/HouraiLauncher">Hourai Launcher</a>,
+a sister project that reads Hourai Deploy compatible index files and updates
+local files. It's created using Python: PyQt provides a cross platform GUI, and
+PyInstaller creates standalone executables so that players don't need to have a
+python runtime to run it. At it's core Hourai Launcher is a script for
+downloading and updating the game, everything else is to get it to work nicely
+with a responsive UI. A more barebones update script can be done as follows:</p>
+<pre data-lang="python" style="background-color:#2b303b;color:#c0c5ce;" class="language-python "><code class="language-python" data-lang="python"><span style="color:#65737e;"># For downloading files to disk
+</span><span style="color:#b48ead;">def </span><span style="color:#8fa1b3;">download_file</span><span>(</span><span style="color:#bf616a;">url</span><span>, </span><span style="color:#bf616a;">file_path</span><span>, </span><span style="color:#bf616a;">block_size</span><span>=</span><span style="color:#d08770;">1024</span><span>*</span><span style="color:#d08770;">1024</span><span>):
+</span><span>  </span><span style="color:#b48ead;">with </span><span style="color:#96b5b4;">open</span><span>(file_path, &#39;</span><span style="color:#a3be8c;">wb+</span><span>&#39;) </span><span style="color:#b48ead;">as </span><span>file:
+</span><span>    </span><span style="color:#65737e;"># Remember to stream this
+</span><span>    reqponse = requests.</span><span style="color:#bf616a;">get</span><span>(url, </span><span style="color:#bf616a;">stream</span><span>=</span><span style="color:#d08770;">True</span><span>)
+</span><span>    </span><span style="color:#b48ead;">for </span><span>block </span><span style="color:#b48ead;">in </span><span style="color:#96b5b4;">iter</span><span>(</span><span style="color:#b48ead;">lambda</span><span>: file_source.</span><span style="color:#bf616a;">read</span><span>(block_size), </span><span style="color:#b48ead;">b</span><span>&#39;&#39;):
+</span><span>      file.</span><span style="color:#bf616a;">write</span><span>(block)
+</span><span>
+</span><span style="color:#65737e;"># Index local files
+</span><span>game_index = </span><span style="color:#bf616a;">dict</span><span>()
+</span><span>replacement = </span><span style="color:#bf616a;">GAME_BASE_DIR </span><span>+ os.path.sep
+</span><span style="color:#b48ead;">for </span><span>directory, </span><span style="color:#bf616a;">_</span><span>, files </span><span style="color:#b48ead;">in </span><span>os.</span><span style="color:#bf616a;">walk</span><span>(</span><span style="color:#bf616a;">GAME_BASE_DIR</span><span>):
+</span><span>  </span><span style="color:#b48ead;">for </span><span>file </span><span style="color:#b48ead;">in </span><span>files:
+</span><span>    full_path = os.path.</span><span style="color:#bf616a;">join</span><span>(directory, file)
+</span><span>    relative_path = full_path.</span><span style="color:#bf616a;">replace</span><span>(replacement, &#39;&#39;)
+</span><span>    </span><span style="color:#65737e;"># Use same hashing function mentioned earlier
+</span><span>    game_index[file] = </span><span style="color:#bf616a;">hash_file</span><span>(full_path)
+</span><span>
+</span><span style="color:#65737e;"># Fetch remote index using requests library
+</span><span style="color:#b48ead;">import </span><span>requests
+</span><span>index_json = requests.</span><span style="color:#bf616a;">get</span><span>(</span><span style="color:#bf616a;">INDEX_URL</span><span>)
+</span><span>
+</span><span style="color:#65737e;"># Download missing or improper files
+</span><span style="color:#b48ead;">for </span><span>file, data </span><span style="color:#b48ead;">in </span><span>index_json[&#39;</span><span style="color:#a3be8c;">files</span><span>&#39;]:
+</span><span>  url = </span><span style="color:#bf616a;">build_url</span><span>(game_index, data)
+</span><span>  path = os.path.</span><span style="color:#bf616a;">join</span><span>(</span><span style="color:#bf616a;">GAME_BASE_DIR</span><span>, file)
+</span><span>  </span><span style="color:#b48ead;">if </span><span>file not in game_index:
+</span><span>    </span><span style="color:#bf616a;">download_file</span><span>(url, path)
+</span><span>  </span><span style="color:#b48ead;">elif </span><span>game_index[file] != data[&#39;</span><span style="color:#a3be8c;">sha256</span><span>&#39;]:
+</span><span>    </span><span style="color:#bf616a;">download_file</span><span>(url, path)
+</span><span>
+</span><span style="color:#65737e;"># Remove unneeded files
+</span><span style="color:#b48ead;">for </span><span>file, </span><span style="color:#96b5b4;">hash </span><span style="color:#b48ead;">in </span><span>game_index:
+</span><span>  </span><span style="color:#b48ead;">if </span><span>file not in index_json[&#39;</span><span style="color:#a3be8c;">files</span><span>&#39;]:
+</span><span>    os.</span><span style="color:#bf616a;">remove</span><span>(os.path.</span><span style="color:#bf616a;">join</span><span>(</span><span style="color:#bf616a;">GAME_BASE_DIR</span><span>, file)
+</span></code></pre>
+<p>Bonus: There's some extra space available on the UI, so I added a news list to
+help list the news regarding the game from a RSS feed.</p>
+<h1 id="refinement-and-improvement">Refinement and Improvement</h1>
+<p>Now that we have a basic system set up, there are a number of smaller problems
+that should probably be addressed to ensure the system runs as smoothly as
+possible.</p>
+<h2 id="supporting-multiple-branches">Supporting Multiple Branches</h2>
+<p>Why would we want to support multiple branches? Ask Blizzard: <em>Overwatch</em> and
+many other games have a closed beta, open beta, endless beta, public test region
+(PTR), etc. This allows you to isolate different deployment enviroments and lets
+players have multiple installations on your machine: a publicly released
+version, or the latest test beta. This supports development workflows like
+<a href="https://datasift.github.io/gitflow/IntroducingGitFlow.html">Gitflow</a> where
+there are multiple historical branches of development, which are known to help
+avoid introducing momentary bugs when creating new features.</p>
+<p>This is relatively simple, additional space and directories simply need to be
+allocated on both the players' machines and on the deployment host, with
+additional configuration to Hourai Launcher and Hourai Deploy for this. When
+multiple branches are configured, the UI will expose a selector box for choosing
+which version of the game to use.</p>
+<h2 id="caching-and-cache-busting">Caching and Cache Busting</h2>
+<p>There is one large caveat to our current setup: it can become exceptionally
+bandwidth heavy quickly, even with compression. A 5GB game with 1000 clean
+installs is 5TB of bandwidth used. This easily can get to $100 to
+$1000+ per month for just bandwith (depending on where and how you are hosting
+your game files).</p>
+<p>The solution is to use a CDN (Content Delivery Network) to cache the game files.
+Instead of hammering your file server with heavy requests, requests for already
+cached files end at the CDN, signifigantly reducing For added benefit, good
+CDNs geographically replicate your data, meaning download speeds are more
+uniform, regardless of geographic location. Currently at time of writing,
+HouraiDeploy assumes the static file server is behind
+<a href="https://cloudflare.com">CloudFlare</a>: a free CDN service that doubles as DDoS
+protection. In the case of Hourai Teahouse, we set up the Page Rules for
+https://patch.houraiteahouse.net to very aggressively cache files:</p>
+<ul>
+<li><strong>Cache Everything</strong> - every file served from the domain is cached</li>
+<li><strong>Browser Cache TTL: 1 year</strong> - browsers and clients should keep the file
+cached for a full year, and assume the file has not changed.</li>
+<li><strong>Edge Cache TTL: 1 month</strong> - If a file is cached on CloudFlare's servers, it
+will not check for a change in the file until a month later.</li>
+</ul>
+<p>The combination of these three drastically reduce the amount of bandwidth used:
+CloudFlare will likely fetch a file once and only once from the host. All other
+requests will be handled entirely by CloudFlare itself.</p>
+<p>However, these aggressive caching rules presents a problem: updated files are
+not served if they are on the same path. For example, if the base binary
+<code>fc.exe</code> was fetched and cached on June 1st 2017, but then updated 7 days later,
+CloudFlare will assume nothing has changed until July 1st 2017, serving the old
+fc.exe, despite the base file changing. There are two ways of dealing with this
+issue: <strong>cache invalidation</strong> and <strong>cache busting</strong>.</p>
+<p>Cache invalidation involves explicitly telling CloudFlare or any other CDN that
+the cached file is now invalid, forcing it to refetch and recache the file.
+CloudFlare has explicit
+<a href="https://api.cloudflare.com/#zone-purge-individual-files-by-url-and-cache-tags">REST API endpoints</a>
+for this purpose. There are some caveats to this: this endpoint is limited to
+2000 calls per 24 hours, so it's not well suited for doing purges of large
+groups of files. It is however, incredibly useful for invalidating fixed API
+endpoints, like the generated index.json file. Hourai Deploy actively uses this
+calls this endpoint to invalidate these kinds of files.</p>
+<p>If cache invalidation does not work on large groups of files, cache-busting does
+a much better job. The idea is not to invalidate the files server side, but
+rather force the client to fetch from a location that will intentionally miss
+the cache. To do this, we simply need to alter the URL for a file to include a
+static &quot;change identifier&quot;. This identifier should be the same so long as the
+binary content of the file is the same, and should be drastically different if
+there is even a small change in the content. A simple solution is to append the
+SHA-256 hash which we previously computed for index.json to the filename. For
+example, <code>fc.exe</code> now becomes
+<code>fc.exe_142ac6014584d99e0a520145f142e176fe200bec431d9cc96029ef058ac34f01</code>. As
+this hash will change signifigantly when the file changes even slightly, so will
+the URL, forcing a cache miss each time there is a new file.
+If the file has not changed, the URL remains the same, allowing
+full use of the cache. It should be noted that old cached versions of files will
+remain in the cache with this technique. Hourai Deploy automatically appends file
+hashes, and Hourai Launcher will build the URL accordingly to incorporate the
+hash.</p>
+<p>The end strategy is thus to invalidate the index.json each time it's updated, in
+which it includes the data needed to build the appropriate cache-busting URL to
+fetch new files.</p>
+</p>
+  
+  
+    <script src="https://utteranc.es/client.js"
+            repo="james7132/jliu.xyz"
+            issue-term="og:title"
+            label="comments"
+            theme="photon-dark"
+            crossorigin="anonymous"
+            async>
+    </script>
+  
+  </section>
+
+    </div>
+    <footer class="footer has-text-centered is-align-items-flex-end mt-auto">
+  <p>
+    <strong>© 2024 James Liu</strong> - Powered by
+    <a href="https://www.getzola.org">Zola</a> and
+    <a href="https://bulma.io">Bulma</a>.
+  </p>
+  <p>
+    <a href="contact@jamessliu.com"</a>Contact Me</a> |
+    <a href="https://github.com/james7132/jliu.xyz">Source Code</a>.
+  </p>
+</footer>
+
+  </body>
+</html>
