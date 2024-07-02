@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://jliu.xyz/index.css?h=6026fd6f4864615e04ca"/>
+    <title>James Liu</title>
+    
+
+  <meta content="Homelab" property="og:title">
+
+
+
+  <meta content="article" property="og:type">
+
+
+
+
+
+
+
+
+
+
+<!---->
+
+  </head>
+  <body class="is-family-monospace is-fullheight">
+    <div class="header">
+      <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item is-family-code is-size-4 has-text-success" href="/">
+        ~> jliu
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="buttons">
+          <a class="button is-dark" href="https://jliu.xyz/about/">
+            About
+          </a>
+          <a class="button is-dark" href="https://jliu.xyz/blog/">
+            Blog
+          </a>
+          <a class="button is-dark" href="https://jliu.xyz/projects/">
+            Projects
+          </a>
+          <a class="button is-danger" href="https://github.com/sponsors/james7132">
+            Support
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+      
+  <section class="hero is-dark is-small">
+    <div class="hero-body container has-text-centered">
+      <p class="title">
+        Homelab
+      </p>
+      
+    </div>
+  </section>
+  
+    <section class="section container">
+      <div class="columns">
+        <div class="column content is-one-fifth">
+          <ul>
+  
+    <li>
+      <a href="https://jliu.xyz/homelab/#hardware">Hardware</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://jliu.xyz/homelab/#software">Software</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://jliu.xyz/homelab/#automation">Automation</a>
+            </li>
+          
+            <li>
+              <a href="https://jliu.xyz/homelab/#network-management">Network Management</a>
+            </li>
+          
+            <li>
+              <a href="https://jliu.xyz/homelab/#media">Media</a>
+            </li>
+          
+            <li>
+              <a href="https://jliu.xyz/homelab/#data-backup-and-file-management">Data Backup and File Management</a>
+            </li>
+          
+            <li>
+              <a href="https://jliu.xyz/homelab/#personal-apps">Personal Apps</a>
+            </li>
+          
+            <li>
+              <a href="https://jliu.xyz/homelab/#monitoring">Monitoring</a>
+            </li>
+          
+            <li>
+              <a href="https://jliu.xyz/homelab/#dns">DNS</a>
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+</ul>
+
+        </div>
+        <div class="column content is-four-fifths">
+          <p><p>I'm a huge proponent of personal data ownership, and avoiding reliance on public
+cloud services, which may not have consumers' best interests in mind.</p>
+<p>Since 2019, I've slowly been building out my own personal homelab.</p>
+<h1 id="hardware">Hardware</h1>
+<p>All of my homelab</p>
+<h1 id="software">Software</h1>
+<p>Almost all of the following software are hosted via
+<a href="https://opencontainers.org/">OCI</a> containers. Currently being managed via
+<a href="https://www.docker.com/">Docker</a>, but I may eventually switch to
+<a href="https://podman.io/">Podman</a> instead.</p>
+<h2 id="automation">Automation</h2>
+<ul>
+<li><a href="https://www.home-assistant.io/">Home Assistant</a> - An all-in-one, self-hosted,
+privacy-oriented home automation solution.</li>
+<li><a href="https://github.com/zwave-js">zwave.js</a> - A self-hosted service for managing a
+<a href="https://www.z-wave.com/">Z-Wave</a> network of IoT devices.</li>
+<li><a href="https://gotify.net/">Gotify</a> - A simple self-hosted service for sending push
+notifications to mobile devices.</li>
+</ul>
+<h2 id="network-management">Network Management</h2>
+<ul>
+<li><a href="https://help.ui.com/hc/en-us/articles/360012282453-UniFi-Network-Self-Hosting-your-UniFi-Network-Without-a-Console-Advanced-">Unifi Controller</a> -
+Used to control and manage my home Wifi network and Ubiquiti devices.</li>
+<li><a href="https://github.com/timothymiller/cloudflare-ddns">cloudflare-ddns</a> - A simple
+script for updating <a href="https://www.cloudflare.com/">CloudFlare</a> DNS records to
+ensure that my DNS entries are pointed at my home network.</li>
+</ul>
+<h2 id="media">Media</h2>
+<ul>
+<li><a href="https://jellyfin.org/">Jellyfin</a> - Media Server for TV shows, movies, etc.</li>
+<li><a href="https://transmissionbt.com/">Transmission</a> - BitTorrent Client with a web
+interface/API.</li>
+<li><a href="https://sonarr.tv/">Sonarr</a> - Internet-based PVR. Used to automate fetching
+TV shows with Transmission. Notifications sent to mobile via Gotify.</li>
+<li><a href="https://radarr.video/">Radarr</a> - Sonarr, but for movies. Notifications sent
+to mobile via Gotify.</li>
+<li><a href="https://github.com/Jackett/Jackett">Jackett</a> - A Sonarr/Radarr indexer for
+various BitTorrent trackers.</li>
+</ul>
+<h2 id="data-backup-and-file-management">Data Backup and File Management</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Server_Message_Block">SMB</a> - Synology comes, by
+default, with a built in SMB3 server.</li>
+<li><a href="https://gitea.io/en-us/">Gitea</a> - A self-hosted alternative to GitHub. I
+primarily use it with a cronjob to automatically backup all repos I interact
+with on GitHub.</li>
+<li><a href="https://www.postgresql.org/">PostgreSQL</a> - The go-to industry solution for
+relational databases. Backs much of the other services in this list like Home
+Assistant, Gitea, and Hastebin.</li>
+</ul>
+<h2 id="personal-apps">Personal Apps</h2>
+<ul>
+<li><a href="https://vikunja.io/">Vikunja</a> - A self-hosted alternative to
+<a href="https://todoist.com/">Todoist</a>. I use it primarily for personal task
+management.</li>
+<li><a href="https://github.com/toptal/haste-server">Hastebin</a> - A simple pastebin
+alternative for sharing text dumps.</li>
+<li>I self-host a personal file server, which is publicly readable at
+https://files.jliu.xyz via SMB with <a href="https://www.nginx.com/">nginx</a>.</li>
+<li>I've set up <a href="https://getsharex.com/">ShareX</a> to upload screenshots to
+https://i.jliu.xyz/ using the same upload path through SMB.</li>
+</ul>
+<h2 id="monitoring">Monitoring</h2>
+<ul>
+<li><a href="https://grafana.com/">Grafana</a> - A dashboarding service that integrates with
+both Prometheus and Postgre.</li>
+<li><a href="https://prometheus.io/">Prometheus</a> - A time-series database and metrics
+management solution. Integrates with almost all of my other containers for
+monitoring their long term state.</li>
+</ul>
+<h2 id="dns">DNS</h2>
+<p>TODO: Complete this section</p>
+</p>
+        </div>
+      </div>
+  
+  
+    <script src="https://utteranc.es/client.js"
+            repo="james7132/jliu.xyz"
+            issue-term="og:title"
+            label="comments"
+            theme="photon-dark"
+            crossorigin="anonymous"
+            async>
+    </script>
+  
+  </section>
+
+    </div>
+    <footer class="footer has-text-centered is-align-items-flex-end mt-auto">
+  <p>
+    <strong>© 2024 James Liu</strong> - Powered by
+    <a href="https://www.getzola.org">Zola</a> and
+    <a href="https://bulma.io">Bulma</a>.
+  </p>
+  <p>
+    <a href="contact@jamessliu.com"</a>Contact Me</a> |
+    <a href="https://github.com/james7132/jliu.xyz">Source Code</a>.
+  </p>
+</footer>
+
+  </body>
+</html>

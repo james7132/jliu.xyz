@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://jliu.xyz/index.css?h=6026fd6f4864615e04ca"/>
+    <title>James Liu</title>
+    
+
+  <meta content="Unity Tip: ArrayPool for Easier Non Alloc Physics Queries" property="og:title">
+
+
+
+  <meta content="article" property="og:type">
+
+
+
+
+
+
+
+  <meta content="2018-01-29T00:00:00+00:00" property="article:published_time">
+  <meta content="https://jliu.xyz/about" property="article:author">
+
+
+
+
+<!---->
+
+  </head>
+  <body class="is-family-monospace is-fullheight">
+    <div class="header">
+      <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item is-family-code is-size-4 has-text-success" href="/">
+        ~> jliu
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="buttons">
+          <a class="button is-dark" href="https://jliu.xyz/about/">
+            About
+          </a>
+          <a class="button is-dark" href="https://jliu.xyz/blog/">
+            Blog
+          </a>
+          <a class="button is-dark" href="https://jliu.xyz/projects/">
+            Projects
+          </a>
+          <a class="button is-danger" href="https://github.com/sponsors/james7132">
+            Support
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+      
+  <section class="hero is-dark is-small">
+    <div class="hero-body container has-text-centered">
+      <p class="title">
+        Unity Tip: ArrayPool for Easier Non Alloc Physics Queries
+      </p>
+      
+        <p class="subtitle">
+          
+            
+              January 29 2018
+            
+            
+            
+          
+          
+        </p>
+      
+    </div>
+  </section>
+  
+    <section class="section container post content">
+      <p><p>Here's a quick tip. In the upcoming Unity 2018.1 beta, they've recently added
+support for .NET Standard 2.0 profile. This includes <code>System.Buffers.ArrayPool</code>
+class. ArrayPool acts as a managed pool of strongly typed arrays. This class can
+be particularly useful when working with the *NonAlloc Unity Physics queries, as
+they require an array as an input.</p>
+<p>Before, you likely had code like the following:</p>
+<pre data-lang="cs" style="background-color:#2b303b;color:#c0c5ce;" class="language-cs "><code class="language-cs" data-lang="cs"><span style="color:#b48ead;">const int </span><span style="color:#bf616a;">kCacheSize </span><span>= </span><span style="color:#d08770;">256</span><span>;
+</span><span>Collider[] </span><span style="color:#bf616a;">colldierCache</span><span>; </span><span style="color:#65737e;">// Member variable to the script as a cache
+</span><span>
+</span><span style="color:#b48ead;">void </span><span style="color:#8fa1b3;">Awake</span><span>() {
+</span><span>  </span><span style="color:#bf616a;">colliderCache </span><span>= new Collider[</span><span style="color:#bf616a;">kCacheSize</span><span>];
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">void </span><span style="color:#8fa1b3;">CheckSphere</span><span>(...) {
+</span><span>  </span><span style="color:#b48ead;">int </span><span style="color:#bf616a;">colliderCount </span><span>= </span><span style="color:#bf616a;">Physics</span><span>.</span><span style="color:#bf616a;">OverlapSphereNonAlloc</span><span>(..., </span><span style="color:#bf616a;">colldierCache</span><span>, ...);
+</span><span>  </span><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">int </span><span style="color:#bf616a;">i </span><span>= </span><span style="color:#d08770;">0</span><span>; </span><span style="color:#bf616a;">i </span><span>&lt; </span><span style="color:#bf616a;">colliderCount</span><span>; </span><span style="color:#bf616a;">i</span><span>++) {
+</span><span>    ...
+</span><span>    </span><span style="color:#65737e;">// Process colldier here
+</span><span>    ...
+</span><span>  }
+</span><span>}
+</span></code></pre>
+<p>The overhead of needing to manage a member variable as a cache can be quite
+cumbersome, especially when it's an operation as common as raycasting. The
+previously shown code can be rewritten like so:</p>
+<pre data-lang="cs" style="background-color:#2b303b;color:#c0c5ce;" class="language-cs "><code class="language-cs" data-lang="cs"><span style="color:#b48ead;">using </span><span>System.Buffers;
+</span><span>
+</span><span style="color:#b48ead;">void </span><span style="color:#8fa1b3;">CheckSphere</span><span>(...) {
+</span><span>  </span><span style="color:#b48ead;">const int </span><span style="color:#bf616a;">kCacheSize </span><span>= </span><span style="color:#d08770;">256</span><span>;
+</span><span>  </span><span style="color:#b48ead;">var </span><span style="color:#bf616a;">arrayPool </span><span>= ArrayPool&lt;Collider&gt;.</span><span style="color:#bf616a;">Shared</span><span>;
+</span><span>  Collider[] </span><span style="color:#bf616a;">colliderCache </span><span>= </span><span style="color:#bf616a;">arrayPool</span><span>.</span><span style="color:#bf616a;">Rent</span><span>(</span><span style="color:#bf616a;">kCacheSize</span><span>);
+</span><span>  </span><span style="color:#b48ead;">int </span><span style="color:#bf616a;">colliderCount </span><span>= </span><span style="color:#bf616a;">Physics</span><span>.</span><span style="color:#bf616a;">OverlapSphereNonAlloc</span><span>(..., </span><span style="color:#bf616a;">colldierCache</span><span>, ...);
+</span><span>  </span><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">int </span><span style="color:#bf616a;">i </span><span>= </span><span style="color:#d08770;">0</span><span>; </span><span style="color:#bf616a;">i </span><span>&lt; </span><span style="color:#bf616a;">colliderCount</span><span>; </span><span style="color:#bf616a;">i</span><span>++) {
+</span><span>    ...
+</span><span>    </span><span style="color:#65737e;">// Process colldier here
+</span><span>    ...
+</span><span>  }
+</span><span>  </span><span style="color:#bf616a;">arrayPool</span><span>.</span><span style="color:#bf616a;">Return</span><span>(</span><span style="color:#bf616a;">colliderCache</span><span>);
+</span><span>}
+</span></code></pre>
+<p>Some things to consider:</p>
+<ul>
+<li>This can further reduce memory allocations by reusing arrays across different
+operations. (i.e. an allocated array returned from one operation can be used
+in a completely different context).</li>
+<li>The size of the rented array may be larger than the requested size.</li>
+<li>If the pool is empty, it will allocate an array of the requested size.</li>
+<li>You do not need to make sure to return the array. The pool will continue to
+operate normally even if none of the rented arrays are never returned.</li>
+<li>Arrays not returned to the pool will eventually just get collected by GC.</li>
+<li>The pool is bucketed based on array size, if a bucket is full, a returned
+array will not be added back to the pool.</li>
+</ul>
+</p>
+  
+  
+    <script src="https://utteranc.es/client.js"
+            repo="james7132/jliu.xyz"
+            issue-term="og:title"
+            label="comments"
+            theme="photon-dark"
+            crossorigin="anonymous"
+            async>
+    </script>
+  
+  </section>
+
+    </div>
+    <footer class="footer has-text-centered is-align-items-flex-end mt-auto">
+  <p>
+    <strong>© 2024 James Liu</strong> - Powered by
+    <a href="https://www.getzola.org">Zola</a> and
+    <a href="https://bulma.io">Bulma</a>.
+  </p>
+  <p>
+    <a href="contact@jamessliu.com"</a>Contact Me</a> |
+    <a href="https://github.com/james7132/jliu.xyz">Source Code</a>.
+  </p>
+</footer>
+
+  </body>
+</html>
