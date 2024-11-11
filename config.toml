@@ -5,10 +5,10 @@ default_language = "en"
 
 compile_sass = true
 build_search_index = true
-minifiy_html = true
+minify_html = true
 
-generate_feed = true
-feed_filename = "atom.xml"
+generate_feeds = true
+feed_filenames = ["atom.xml"]
 
 [markdown]
 highlight_code = true
