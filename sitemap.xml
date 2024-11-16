@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://jliu.xyz/</loc>
+    </url>
+    <url>
+        <loc>https://jliu.xyz/about/</loc>
+    </url>
+    <url>
+        <loc>https://jliu.xyz/blog/</loc>
+    </url>
+    <url>
+        <loc>https://jliu.xyz/blog/automated-doujin-game-deployment/</loc>
+        <lastmod>2017-06-09</lastmod>
+    </url>
+    <url>
+        <loc>https://jliu.xyz/blog/life-being-transportationally-disabled/</loc>
+        <lastmod>2019-05-13</lastmod>
+    </url>
+    <url>
+        <loc>https://jliu.xyz/blog/unity-tip-arraypool-for-easier-non-alloc-physics-queries/</loc>
+        <lastmod>2018-01-29</lastmod>
+    </url>
+    <url>
+        <loc>https://jliu.xyz/blog/unity3d-pain-point/</loc>
+        <lastmod>2017-04-16</lastmod>
+    </url>
+    <url>
+        <loc>https://jliu.xyz/homelab/</loc>
+    </url>
+    <url>
+        <loc>https://jliu.xyz/projects/</loc>
+    </url>
+</urlset>
