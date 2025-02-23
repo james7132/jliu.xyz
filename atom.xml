@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>James Liu</title>
+    <link rel="self" type="application/atom+xml" href="https://jliu.xyz/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://jliu.xyz"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2019-05-13T00:00:00+00:00</updated>
+    <id>https://jliu.xyz/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Life being Transportationally Disabled</title>
+        <published>2019-05-13T00:00:00+00:00</published>
+        <updated>2019-05-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://jliu.xyz/blog/life-being-transportationally-disabled/"/>
+        <id>https://jliu.xyz/blog/life-being-transportationally-disabled/</id>
+        
+        <content type="html" xml:base="https://jliu.xyz/blog/life-being-transportationally-disabled/">&lt;p&gt;It&#x27;s 2019. For decades, the United States has had the world&#x27;s most expansive
+road system. For an American, it is nearly unthinkable to live without a car to
+ferry yourself from place to place. For example, in my birth city of Marietta,
+Georgia, it is 3 miles from home to then nearest convinence store, 7 miles from
+home to high school, and 30+ miles to downtown. With dismal public transit, if
+you didn&#x27;t have a car, you could not work, you could not go to school, you
+couldn&#x27;t go out for fun, you cannot function as a member of society without one.&lt;&#x2F;p&gt;
+&lt;p&gt;Then here I am: 25 years old and still asking friends for rides whenever we are
+out and about. No longer do I live in Georgia, I transplanted myself to the San
+Francisco Bay Area 4 years ago. For the most part, it&#x27;s been a great experience,
+the public transit isn&#x27;t stellar, but it also isn&#x27;t non-existent, so it&#x27;s a big
+step up. Whenever I am moving solo, there&#x27;s zero issue: everything is within
+walking or biking distance, and when I need to go far there&#x27;s the train in
+Caltrain, or heavy rail in BART. If I am in a lazy mood and just need to get
+somewhere without thinking too much, Lyft and Uber are abundantly available.
+Their tight competition here keeps prices low, so split among all the public
+transit options available to me, I likely spend less on solo travel than most
+people spend on their car month to month. 95+% of the time, I never feel like I
+need to own my own car. This paradigm, however, rapidly falls apart when more
+people are involved or when moving more than just people is involved, something
+I&#x27;ve become acutely aware of recently.&lt;&#x2F;p&gt;
+&lt;p&gt;Two weeks ago, two things coincided that changed my mind about car ownership.
+For the first time in 4 years, I was looking to buy new furniture for my
+apartment, and decided to hit up the good old local IKEA. Even for the smallest
+of items I purchased that day, I couldn&#x27;t ask a Lyft driver to carry for me nor
+could I drag it the hour bike ride home with me. Tacking on an additional $60
+delivery fee onto an already expensive furniture purchase doesn&#x27;t appear to be
+much, but it definiitely opened my eyes to what could have been. Later that week
+was a friend&#x27;s birthday party, and I was grabbing a present for them the day of.
+I picked it up locally on my bike and was happily pedalling home with it.
+Halfway there, some asshole comes screeching down the road at 80 on a 40mph
+road, in the bike lane. Nearly got my butt run over, fell off my bike at a
+decently high speed, smashed the present, and ended up with numerous scrapes and
+bruises all over. Had I been in a car instead, at least I would have had a
+seat belt and airbag to cushion the inpact. Was reeling too hard form the fall
+to get his license plate too. I needed to get a car of my own for my financial
+and physical wellbeing.&lt;&#x2F;p&gt;
+&lt;p&gt;I had gotten my Georgia state driver&#x27;s license last October while in for a
+visit, and had yet to use it to get California one. This wasn&#x27;t an easy win.
+Afflicted with infantile nystagmus syndrome, I have, since birth, had pretty
+bad eyesight, and even worse reaction times. For the longest time, my parents
+worried that I wouldn&#x27;t be able to drive due to this condition. From age 15, I
+have been practicing, and only got it shortly after I turned 24. Spent 9 years
+with a learner&#x27;s permit, and even then it took many tries to finally get the
+full license. During that final test, the vision tests said I came out at 20&#x2F;60
+vision: right at the borderline for Georgia, something that I brushed off at the
+time.&lt;&#x2F;p&gt;
+&lt;p&gt;Last week, I attempted to use said Georgia license to obtain a California one, I
+could skip the driving test since I already had another state license.
+It was going fairly smoothly: forgot my documents the first time, had to make
+several trips to the DMV. With the vision test, it came back as expected: 20&#x2F;60.
+Clearly this wasn&#x27;t enough. California law requires a more stringent 20&#x2F;40 to
+operate vehicles. Every 6 months, due to my condition, I get a full eye
+examinaiton.  Only once in 20+ years did I ever get a 20&#x2F;40, my vision has never
+improved past that. Even if I did go through additional (costly) therapy to
+improve my eyesight, I likely will never have the same level of visual acuity
+again, and even if I did, it wouldn&#x27;t last very long. That day, I got a strict
+confirmation that I may never drive legally in California.&lt;&#x2F;p&gt;
+&lt;p&gt;I don&#x27;t blame the law: those requirements exist for a reason, and I feel we are
+all safer for it. Nor do I curse the physical aliments that afflict me: it&#x27;s
+just something I live with. However, I weep at the lost opprotunities that
+result from this situation.&lt;&#x2F;p&gt;
+&lt;p&gt;Thankfully, we are on the horizon of a new age of autonomous vehicles, and I&#x27;ve
+been working close to the heart of it. At work, I have been working hard to
+provide the necessary infrastructure to support fully autonomous vehicles. Moving
+twoards that future, I desperately hope that there will be a day where no human
+needs to be behind the wheel.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Unity Tip: ArrayPool for Easier Non Alloc Physics Queries</title>
+        <published>2018-01-29T00:00:00+00:00</published>
+        <updated>2018-01-29T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://jliu.xyz/blog/unity-tip-arraypool-for-easier-non-alloc-physics-queries/"/>
+        <id>https://jliu.xyz/blog/unity-tip-arraypool-for-easier-non-alloc-physics-queries/</id>
+        
+        <content type="html" xml:base="https://jliu.xyz/blog/unity-tip-arraypool-for-easier-non-alloc-physics-queries/">&lt;p&gt;Here&#x27;s a quick tip. In the upcoming Unity 2018.1 beta, they&#x27;ve recently added
+support for .NET Standard 2.0 profile. This includes &lt;code&gt;System.Buffers.ArrayPool&lt;&#x2F;code&gt;
+class. ArrayPool acts as a managed pool of strongly typed arrays. This class can
+be particularly useful when working with the *NonAlloc Unity Physics queries, as
+they require an array as an input.&lt;&#x2F;p&gt;
+&lt;p&gt;Before, you likely had code like the following:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;cs&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-cs &quot;&gt;&lt;code class=&quot;language-cs&quot; data-lang=&quot;cs&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;const int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;kCacheSize &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;256&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;Collider[] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;colldierCache&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Member variable to the script as a cache
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;Awake&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;colliderCache &lt;&#x2F;span&gt;&lt;span&gt;= new Collider[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;kCacheSize&lt;&#x2F;span&gt;&lt;span&gt;];
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;CheckSphere&lt;&#x2F;span&gt;&lt;span&gt;(...) {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;colliderCount &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Physics&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;OverlapSphereNonAlloc&lt;&#x2F;span&gt;&lt;span&gt;(..., &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;colldierCache&lt;&#x2F;span&gt;&lt;span&gt;, ...);
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;i &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;i &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;colliderCount&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;i&lt;&#x2F;span&gt;&lt;span&gt;++) {
+&lt;&#x2F;span&gt;&lt;span&gt;    ...
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Process colldier here
+&lt;&#x2F;span&gt;&lt;span&gt;    ...
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The overhead of needing to manage a member variable as a cache can be quite
+cumbersome, especially when it&#x27;s an operation as common as raycasting. The
+previously shown code can be rewritten like so:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;cs&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-cs &quot;&gt;&lt;code class=&quot;language-cs&quot; data-lang=&quot;cs&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;using &lt;&#x2F;span&gt;&lt;span&gt;System.Buffers;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;CheckSphere&lt;&#x2F;span&gt;&lt;span&gt;(...) {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;const int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;kCacheSize &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;256&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;var &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;arrayPool &lt;&#x2F;span&gt;&lt;span&gt;= ArrayPool&amp;lt;Collider&amp;gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Shared&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  Collider[] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;colliderCache &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;arrayPool&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Rent&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;kCacheSize&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;colliderCount &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Physics&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;OverlapSphereNonAlloc&lt;&#x2F;span&gt;&lt;span&gt;(..., &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;colldierCache&lt;&#x2F;span&gt;&lt;span&gt;, ...);
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;i &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;i &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;colliderCount&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;i&lt;&#x2F;span&gt;&lt;span&gt;++) {
+&lt;&#x2F;span&gt;&lt;span&gt;    ...
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Process colldier here
+&lt;&#x2F;span&gt;&lt;span&gt;    ...
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;arrayPool&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Return&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;colliderCache&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Some things to consider:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;This can further reduce memory allocations by reusing arrays across different
+operations. (i.e. an allocated array returned from one operation can be used
+in a completely different context).&lt;&#x2F;li&gt;
+&lt;li&gt;The size of the rented array may be larger than the requested size.&lt;&#x2F;li&gt;
+&lt;li&gt;If the pool is empty, it will allocate an array of the requested size.&lt;&#x2F;li&gt;
+&lt;li&gt;You do not need to make sure to return the array. The pool will continue to
+operate normally even if none of the rented arrays are never returned.&lt;&#x2F;li&gt;
+&lt;li&gt;Arrays not returned to the pool will eventually just get collected by GC.&lt;&#x2F;li&gt;
+&lt;li&gt;The pool is bucketed based on array size, if a bucket is full, a returned
+array will not be added back to the pool.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Automated Game Deployment</title>
+        <published>2017-06-09T00:00:00+00:00</published>
+        <updated>2017-06-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://jliu.xyz/blog/automated-doujin-game-deployment/"/>
+        <id>https://jliu.xyz/blog/automated-doujin-game-deployment/</id>
+        
+        <content type="html" xml:base="https://jliu.xyz/blog/automated-doujin-game-deployment/">&lt;p&gt;A good game is often built on the solid feedback from playtesters. The tighter
+the feedback loop for a game, whether it be in development or production, the
+faster the developers can collect and iterate on feedback and bug reports.&lt;&#x2F;p&gt;
+&lt;p&gt;Most game devs in the beginning will do periodic builds after long periods of
+isolated development, asking their testers to download the whole game repeatedly
+to test fixes and updates. While this works initially, this takes signifigant
+focus from the developer to create builds and distribute them manually to the testers. This methodology is also flawed when the game is released. Bugs will inevitably pop up: telling players who have already spent time to download a
+potentially large (1-5GB+) game each time there is a minor update is simply
+unacceptable. For indie developers, you could probably use
+Steam or similar services to patch and deploy new changes; however, many of
+these services can be &lt;a href=&quot;http:&#x2F;&#x2F;kotaku.com&#x2F;5884842&#x2F;wait-it-costs-40000-to-patch-a-console-game&quot;&gt;prohibitively
+expensive&lt;&#x2F;a&gt;
+for small indie studios to use. For doujin developers who may or may not be
+creating derivative works without the luxury of these services, we&#x27;re more or
+less on our own: there is no exisitng support structure for this kind of
+service.&lt;&#x2F;p&gt;
+&lt;p&gt;To remedy these problems, we will apply the principles of &lt;strong&gt;continuous
+integration&lt;&#x2F;strong&gt; and &lt;strong&gt;continuous deployment&lt;&#x2F;strong&gt;.  The end goal is to produce an
+automated pipeline: when a developer makes a change, the game is
+built, tested, and deployed to player&#x27;s desktops and
+browsers. Spending time to manually do all of the following is simply draining
+time you could be spending improving your game.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;basic-setup&quot;&gt;Basic Setup&lt;&#x2F;h1&gt;
+&lt;p&gt;At it&#x27;s core, this automated pipeline needs four things: &lt;strong&gt;a queryable source
+control repository&lt;&#x2F;strong&gt;, &lt;strong&gt;an automated build system&lt;&#x2F;strong&gt;, &lt;strong&gt;a deployment web server&lt;&#x2F;strong&gt;
+, and a &lt;strong&gt;client side launcher&#x2F;updater&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;The automated build system will listen to source control for changes. When
+notified, it will automatically start building your game in accordance to your
+specifications. If the build and tests succeed, the goal is to notify the
+deployment server to make the built artifacts publicly available. The client
+launcher then checks if the game files are outdated at launch, and updates the
+game as needed.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;source-control&quot;&gt;Source Control&lt;&#x2F;h2&gt;
+&lt;p&gt;It all begins with the source control. Any good developer worth their salt,
+makes sure to version control their work. I won&#x27;t go too much into detail as
+there are entire books and methodologies written about good source control.
+For the sake of this article, the only hard requirement is that the source
+control service either can automatically notify 3rd parties about pushed
+updates, or can be periodically queried for changes. There are plenty of services
+out there that can satisfy requirement: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&quot;&gt;GitHub&lt;&#x2F;a&gt;,
+&lt;a href=&quot;https:&#x2F;&#x2F;bitbucket.com&quot;&gt;BitBucket&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.com&quot;&gt;GitLab&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;aws.amazon.com&#x2F;codecommit&#x2F;&quot;&gt;AWS
+CodeCommit&lt;&#x2F;a&gt;, etc. Simply choose one that
+suits your needs and push your source to a repository. For my case, &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;HouraiTeahouse&#x2F;FantasyCrescendo&quot;&gt;my
+project&lt;&#x2F;a&gt; lives in a Github
+repository.&lt;&#x2F;p&gt;
+&lt;p&gt;NOTE: Most of these services are free for open source software, while putting a
+limit on private use. If you wish to keep your game closed source, there will be
+costs involved at this stage.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;automatic-builds-continuous-integration&quot;&gt;Automatic Builds (Continuous Integration)&lt;&#x2F;h2&gt;
+&lt;p&gt;The next step is to trigger automatic builds based on source control changes.
+This part also usually involves simply choosing the right service for your game.
+There is &lt;a href=&quot;https:&#x2F;&#x2F;www.appveyor.com&quot;&gt;AppVeyor&lt;&#x2F;a&gt; (Windows) and
+&lt;a href=&quot;https:&#x2F;&#x2F;travis-ci.org&quot;&gt;TravisCI&lt;&#x2F;a&gt; (macOS and Linux) for free and open source
+projects. If you cannot use either for whatever reason, you can always roll your
+own instance via &lt;a href=&quot;https:&#x2F;&#x2F;jenkins.io&#x2F;index.html&quot;&gt;Jenkins&lt;&#x2F;a&gt; or
+&lt;a href=&quot;http:&#x2F;&#x2F;buildbot.net&#x2F;&quot;&gt;BuildBot&lt;&#x2F;a&gt;. For Unity3D games, I strongly recommend
+&lt;a href=&quot;https:&#x2F;&#x2F;build.cloud.unity3d.com&quot;&gt;Unity Cloud Build&lt;&#x2F;a&gt; as setting up a Unity build
+enviroment in any of these other CI systems can be very slow and costly.&lt;&#x2F;p&gt;
+&lt;p&gt;NOTE: Again most of these services are free for open source software, if your
+game is closed source, be prepared to pay up some money, or you may need to do
+additional configuration so that these services have the proper authentication
+to access your source control.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;automatic-deploymment&quot;&gt;Automatic Deploymment&lt;&#x2F;h2&gt;
+&lt;p&gt;You now have a automatic stream of game builds coming in now. Now comes the
+hard part: exposing these files in a public manner for the client to query
+against. To my knowledge, there is no public free service that does this: so I
+rolled &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;HouraiTeahouse&#x2F;HouraiDeploy&quot;&gt;my own&lt;&#x2F;a&gt;. HouraiDeploy is
+a tiny Flask web app that does the following:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Expose a HTTP endpoint for receiving notifications from automatic deployment&lt;&#x2F;li&gt;
+&lt;li&gt;On being notified, it either:
+&lt;ul&gt;
+&lt;li&gt;Clones a copy of the source control for itself, and rebuilds the project
+locally using the same build process used in the CI build. This is for
+security, as it ensures others cannot upload malicious &quot;build artifacts&quot;
+that ultimately will end up executed on player&#x27;s computers.&lt;&#x2F;li&gt;
+&lt;li&gt;Download copies of build artifacts from trusted parties. This is usually
+used when the build process is either too complex or too computationally
+intensive to do locally (i.e. Unity3D builds).&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Upon obtaining the files, it places them in a location accessible by a
+&lt;a href=&quot;https:&#x2F;&#x2F;www.nginx.com&#x2F;resources&#x2F;wiki&#x2F;&quot;&gt;nginx static file server&lt;&#x2F;a&gt;, which then
+serves the files to remote clients.&lt;&#x2F;li&gt;
+&lt;li&gt;It then generates an &lt;strong&gt;index file&lt;&#x2F;strong&gt; for clients to query. More details down
+below.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;For added security, HouraiDeploy also checks for an privately generated access
+token in the HTTP request. These tokens are only stored on the host itself, and
+as encrypted enviroment variables on the continuous integration system&#x27;s end.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;generating-a-index&quot;&gt;Generating a Index&lt;&#x2F;h3&gt;
+&lt;p&gt;The updater works effectively by checking each individual file against a remote
+index. This index includes the file&#x27;s path, size, and SHA-256 hash (though any
+hash would work, it&#x27;s advised to use SHA-2 or better. As MD5 and SHA-1 have been
+known to be cracked and&#x2F;or faked before). The hash is a quick and simple way to
+check if files are identical. If the file exists at a path exists locally, and
+has a matching size and file hash, it&#x27;s almost 100% guarenteed that the files
+are identical, and thus does not need to be redownloaded. If the hash changes,
+we simply update the file by downloading the remote version and replacing the
+local one with it. For HouraiDeploy, we get the file hashes like so:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;from &lt;&#x2F;span&gt;&lt;span&gt;hashlib &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;sha256
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;hash_file&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;path&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;block_size&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;65536&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;  hahser = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sha256&lt;&#x2F;span&gt;&lt;span&gt;()
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;with &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;open&lt;&#x2F;span&gt;&lt;span&gt;(path, &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;r&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;as &lt;&#x2F;span&gt;&lt;span&gt;file_obj:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;block &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;iter&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;lambda&lt;&#x2F;span&gt;&lt;span&gt;: file_source.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;read&lt;&#x2F;span&gt;&lt;span&gt;(block_size), &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;b&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&amp;#39;):
+&lt;&#x2F;span&gt;&lt;span&gt;      hasher.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;update&lt;&#x2F;span&gt;&lt;span&gt;(block)
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;hasher.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;hexdigest&lt;&#x2F;span&gt;&lt;span&gt;()
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This method also minimizes the amount of data needed to update the game: a
+index with ~120 files, irrespective of file size, is only 20kb, saving you the
+bandwidth cost and the player&#x27;s time from needing to serve or download
+unnecessary data.&lt;&#x2F;p&gt;
+&lt;p&gt;We generate one of these indexes for the game each time a new build is
+completed, and it is saved as a file right next to the game data.&lt;&#x2F;p&gt;
+&lt;p&gt;An example of such a index file can be seen
+&lt;a href=&quot;https:&#x2F;&#x2F;patch.houraiteahouse.net&#x2F;fantasy-crescendo&#x2F;develop&#x2F;Linux&#x2F;index.json&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;client-side-launcher&quot;&gt;Client Side Launcher&lt;&#x2F;h2&gt;
+&lt;p&gt;This one is a tough one: we want to create an efficent cross-platform
+downloader with a responsive UI that can work with the index and files we
+generate. Obviously nothing will work off the bat with the freshly created
+Hourai Deploy, so I created
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;HouraiTeahouse&#x2F;HouraiLauncher&quot;&gt;Hourai Launcher&lt;&#x2F;a&gt;,
+a sister project that reads Hourai Deploy compatible index files and updates
+local files. It&#x27;s created using Python: PyQt provides a cross platform GUI, and
+PyInstaller creates standalone executables so that players don&#x27;t need to have a
+python runtime to run it. At it&#x27;s core Hourai Launcher is a script for
+downloading and updating the game, everything else is to get it to work nicely
+with a responsive UI. A more barebones update script can be done as follows:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# For downloading files to disk
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;download_file&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;url&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;file_path&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;block_size&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1024&lt;&#x2F;span&gt;&lt;span&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1024&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;with &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;open&lt;&#x2F;span&gt;&lt;span&gt;(file_path, &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;wb+&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;as &lt;&#x2F;span&gt;&lt;span&gt;file:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Remember to stream this
+&lt;&#x2F;span&gt;&lt;span&gt;    reqponse = requests.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;get&lt;&#x2F;span&gt;&lt;span&gt;(url, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;stream&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;True&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;block &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;iter&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;lambda&lt;&#x2F;span&gt;&lt;span&gt;: file_source.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;read&lt;&#x2F;span&gt;&lt;span&gt;(block_size), &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;b&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&amp;#39;):
+&lt;&#x2F;span&gt;&lt;span&gt;      file.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;write&lt;&#x2F;span&gt;&lt;span&gt;(block)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Index local files
+&lt;&#x2F;span&gt;&lt;span&gt;game_index = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;dict&lt;&#x2F;span&gt;&lt;span&gt;()
+&lt;&#x2F;span&gt;&lt;span&gt;replacement = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;GAME_BASE_DIR &lt;&#x2F;span&gt;&lt;span&gt;+ os.path.sep
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;directory, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_&lt;&#x2F;span&gt;&lt;span&gt;, files &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span&gt;os.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;walk&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;GAME_BASE_DIR&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;file &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span&gt;files:
+&lt;&#x2F;span&gt;&lt;span&gt;    full_path = os.path.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;join&lt;&#x2F;span&gt;&lt;span&gt;(directory, file)
+&lt;&#x2F;span&gt;&lt;span&gt;    relative_path = full_path.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;replace&lt;&#x2F;span&gt;&lt;span&gt;(replacement, &amp;#39;&amp;#39;)
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Use same hashing function mentioned earlier
+&lt;&#x2F;span&gt;&lt;span&gt;    game_index[file] = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;hash_file&lt;&#x2F;span&gt;&lt;span&gt;(full_path)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Fetch remote index using requests library
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;requests
+&lt;&#x2F;span&gt;&lt;span&gt;index_json = requests.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;get&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;INDEX_URL&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Download missing or improper files
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;file, data &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span&gt;index_json[&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;files&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;]:
+&lt;&#x2F;span&gt;&lt;span&gt;  url = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;build_url&lt;&#x2F;span&gt;&lt;span&gt;(game_index, data)
+&lt;&#x2F;span&gt;&lt;span&gt;  path = os.path.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;join&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;GAME_BASE_DIR&lt;&#x2F;span&gt;&lt;span&gt;, file)
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;file not in game_index:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;download_file&lt;&#x2F;span&gt;&lt;span&gt;(url, path)
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;elif &lt;&#x2F;span&gt;&lt;span&gt;game_index[file] != data[&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;sha256&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;]:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;download_file&lt;&#x2F;span&gt;&lt;span&gt;(url, path)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Remove unneeded files
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;file, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;hash &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span&gt;game_index:
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;file not in index_json[&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;files&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;]:
+&lt;&#x2F;span&gt;&lt;span&gt;    os.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;remove&lt;&#x2F;span&gt;&lt;span&gt;(os.path.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;join&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;GAME_BASE_DIR&lt;&#x2F;span&gt;&lt;span&gt;, file)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Bonus: There&#x27;s some extra space available on the UI, so I added a news list to
+help list the news regarding the game from a RSS feed.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;refinement-and-improvement&quot;&gt;Refinement and Improvement&lt;&#x2F;h1&gt;
+&lt;p&gt;Now that we have a basic system set up, there are a number of smaller problems
+that should probably be addressed to ensure the system runs as smoothly as
+possible.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;supporting-multiple-branches&quot;&gt;Supporting Multiple Branches&lt;&#x2F;h2&gt;
+&lt;p&gt;Why would we want to support multiple branches? Ask Blizzard: &lt;em&gt;Overwatch&lt;&#x2F;em&gt; and
+many other games have a closed beta, open beta, endless beta, public test region
+(PTR), etc. This allows you to isolate different deployment enviroments and lets
+players have multiple installations on your machine: a publicly released
+version, or the latest test beta. This supports development workflows like
+&lt;a href=&quot;https:&#x2F;&#x2F;datasift.github.io&#x2F;gitflow&#x2F;IntroducingGitFlow.html&quot;&gt;Gitflow&lt;&#x2F;a&gt; where
+there are multiple historical branches of development, which are known to help
+avoid introducing momentary bugs when creating new features.&lt;&#x2F;p&gt;
+&lt;p&gt;This is relatively simple, additional space and directories simply need to be
+allocated on both the players&#x27; machines and on the deployment host, with
+additional configuration to Hourai Launcher and Hourai Deploy for this. When
+multiple branches are configured, the UI will expose a selector box for choosing
+which version of the game to use.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;caching-and-cache-busting&quot;&gt;Caching and Cache Busting&lt;&#x2F;h2&gt;
+&lt;p&gt;There is one large caveat to our current setup: it can become exceptionally
+bandwidth heavy quickly, even with compression. A 5GB game with 1000 clean
+installs is 5TB of bandwidth used. This easily can get to $100 to
+$1000+ per month for just bandwith (depending on where and how you are hosting
+your game files).&lt;&#x2F;p&gt;
+&lt;p&gt;The solution is to use a CDN (Content Delivery Network) to cache the game files.
+Instead of hammering your file server with heavy requests, requests for already
+cached files end at the CDN, signifigantly reducing For added benefit, good
+CDNs geographically replicate your data, meaning download speeds are more
+uniform, regardless of geographic location. Currently at time of writing,
+HouraiDeploy assumes the static file server is behind
+&lt;a href=&quot;https:&#x2F;&#x2F;cloudflare.com&quot;&gt;CloudFlare&lt;&#x2F;a&gt;: a free CDN service that doubles as DDoS
+protection. In the case of Hourai Teahouse, we set up the Page Rules for
+https:&#x2F;&#x2F;patch.houraiteahouse.net to very aggressively cache files:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Cache Everything&lt;&#x2F;strong&gt; - every file served from the domain is cached&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Browser Cache TTL: 1 year&lt;&#x2F;strong&gt; - browsers and clients should keep the file
+cached for a full year, and assume the file has not changed.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Edge Cache TTL: 1 month&lt;&#x2F;strong&gt; - If a file is cached on CloudFlare&#x27;s servers, it
+will not check for a change in the file until a month later.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The combination of these three drastically reduce the amount of bandwidth used:
+CloudFlare will likely fetch a file once and only once from the host. All other
+requests will be handled entirely by CloudFlare itself.&lt;&#x2F;p&gt;
+&lt;p&gt;However, these aggressive caching rules presents a problem: updated files are
+not served if they are on the same path. For example, if the base binary
+&lt;code&gt;fc.exe&lt;&#x2F;code&gt; was fetched and cached on June 1st 2017, but then updated 7 days later,
+CloudFlare will assume nothing has changed until July 1st 2017, serving the old
+fc.exe, despite the base file changing. There are two ways of dealing with this
+issue: &lt;strong&gt;cache invalidation&lt;&#x2F;strong&gt; and &lt;strong&gt;cache busting&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Cache invalidation involves explicitly telling CloudFlare or any other CDN that
+the cached file is now invalid, forcing it to refetch and recache the file.
+CloudFlare has explicit
+&lt;a href=&quot;https:&#x2F;&#x2F;api.cloudflare.com&#x2F;#zone-purge-individual-files-by-url-and-cache-tags&quot;&gt;REST API endpoints&lt;&#x2F;a&gt;
+for this purpose. There are some caveats to this: this endpoint is limited to
+2000 calls per 24 hours, so it&#x27;s not well suited for doing purges of large
+groups of files. It is however, incredibly useful for invalidating fixed API
+endpoints, like the generated index.json file. Hourai Deploy actively uses this
+calls this endpoint to invalidate these kinds of files.&lt;&#x2F;p&gt;
+&lt;p&gt;If cache invalidation does not work on large groups of files, cache-busting does
+a much better job. The idea is not to invalidate the files server side, but
+rather force the client to fetch from a location that will intentionally miss
+the cache. To do this, we simply need to alter the URL for a file to include a
+static &quot;change identifier&quot;. This identifier should be the same so long as the
+binary content of the file is the same, and should be drastically different if
+there is even a small change in the content. A simple solution is to append the
+SHA-256 hash which we previously computed for index.json to the filename. For
+example, &lt;code&gt;fc.exe&lt;&#x2F;code&gt; now becomes
+&lt;code&gt;fc.exe_142ac6014584d99e0a520145f142e176fe200bec431d9cc96029ef058ac34f01&lt;&#x2F;code&gt;. As
+this hash will change signifigantly when the file changes even slightly, so will
+the URL, forcing a cache miss each time there is a new file.
+If the file has not changed, the URL remains the same, allowing
+full use of the cache. It should be noted that old cached versions of files will
+remain in the cache with this technique. Hourai Deploy automatically appends file
+hashes, and Hourai Launcher will build the URL accordingly to incorporate the
+hash.&lt;&#x2F;p&gt;
+&lt;p&gt;The end strategy is thus to invalidate the index.json each time it&#x27;s updated, in
+which it includes the data needed to build the appropriate cache-busting URL to
+fetch new files.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Unity3D Pain Points</title>
+        <published>2017-04-16T00:00:00+00:00</published>
+        <updated>2017-04-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://jliu.xyz/blog/unity3d-pain-point/"/>
+        <id>https://jliu.xyz/blog/unity3d-pain-point/</id>
+        
+        <content type="html" xml:base="https://jliu.xyz/blog/unity3d-pain-point/">&lt;p&gt;&lt;strong&gt;Unity3D&lt;&#x2F;strong&gt; has risen up from small startup to one of the largest players in the
+game industry. The design of the engine and editor are well suited for allowing
+those who with little prior technical knowledge to create wonderful games.
+However, whether it&#x27;s due to legacy code or simply bad design, there is a
+plethora of pain points in working with the engine. In this post, I will enumerate
+many of the big problems I have personally encountered as a software developer
+working in Unity3D: a wishlist of things that I hope Unity Technologies
+reprioritizes and addresses as soon as possible. This list is by no means
+comprehensive, there are plenty of other big issues that need to be dealt with.&lt;&#x2F;p&gt;
+&lt;p&gt;Note many of these are widely recognized problems, and Unity Technologies seems
+to have three main ways of dealing with them:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dedicate engineering time to resolving them. These will appear in the
+&lt;a href=&quot;https:&#x2F;&#x2F;unity3d.com&#x2F;roadmap&quot;&gt;Unity Roadmap&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Integrating 3rd party solutions, either via offering formerly for-pay Asset Store
+packages for free, or directly integrating it into the engine and providing
+first party support (see SpeedTree and TextMeshPro).&lt;&#x2F;li&gt;
+&lt;li&gt;Leaving it up to Asset Store publishers to cover for problems with the engine
+as the de facto standard solution. This presents a particular issue if these
+packages aren&#x27;t free, as they essentially become mandatory costs when developing
+a new project. It begs the question: why isn&#x27;t it a part of the engine?&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;case-1-an-outdated-mono&quot;&gt;Case 1: An Outdated Mono&lt;&#x2F;h1&gt;
+&lt;p&gt;It&#x27;s 2017: 15 years after the release of C# 4.0. Microsoft just released C# 7.0
+in March, yet Unity still only uses C# 4.0. In the following versions of C# 5.0
+and C# 6.0, many new language constructs dramatically simplify the development
+process: particularly the &quot;new&quot; async&#x2F;await support. Compatibility with newer
+standards will also allow use of the large repository of packages on Nuget: some
+outright replaces some Unity specific APIs (i.e. System.Net.Http could very well
+completely replace UnityWebRequest). Other features such as expression-bodied
+properties, would make code written for Unity games much more readable.&lt;&#x2F;p&gt;
+&lt;p&gt;Note: There has been a very large effort on Unity Technologies end to modernize
+their scripting engine. They&#x27;ve stated that by the time they&#x27;re done, Unity will
+support all .NET Standard 2.0 features.
+This is simply a waiting game at this
+point.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;case-2-poor-api-design&quot;&gt;Case 2: Poor API Design&lt;&#x2F;h1&gt;
+&lt;p&gt;In general there are many design decisions with the API that make writing
+code for Unity projects an absolute pain. These problems are fairly prevalent
+throughout the engine and aren&#x27;t strictly localized to any one part.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;testing-support&quot;&gt;Testing Support&lt;&#x2F;h3&gt;
+&lt;p&gt;Unity pushes developers to design the projects with GameObject-Component
+composition over traditional object-oriented techniques like polymorphism.
+While I agree that this is a smart choice in giving designers great freedom in
+how they compose their game elements, this is undeniably a poor choice when it
+comes to creating valid tests. When writing a new MonoBehavior, you
+intrinsically pulls in a massive dependency on the GameObject it&#x27;s attached to,
+it&#x27;s sibiling components, and potentially the rest of the engine. This is a
+dependency that provides no surface to mock or fake. MonoBehaviours also require
+direct engine integration to trigger their initialization (via &lt;code&gt;Awake&lt;&#x2F;code&gt;and
+&lt;code&gt;Start&lt;&#x2F;code&gt;) instead of using normal constructors. To compensate, every
+MonoBehaviour must be tested using reflection or must wrap a unit testable POCO.
+Either way that creates a situation where every unit test must have a
+corresponding integration test. Not an ideal situation when you simply want to
+affirm your game is working as intended.&lt;&#x2F;p&gt;
+&lt;p&gt;Worse yet, many of the important functions in Unity&#x27;s API are unmockable static
+functions that either requires or manipulates the global engine or editor state.
+For example, almost all methods exposed under &lt;code&gt;UnityEditor.AssetDatabase&lt;&#x2F;code&gt; are
+intrinsically tied to the actual files managed by the Unity project, which
+requires one additional mock method object to be injected into the for every
+method mocked.&lt;&#x2F;p&gt;
+&lt;p&gt;Many have argued in the past that games are intrinsically hard to test. There is
+a combinatorial state space, with each new game feature multiplicatively increases
+potential setups to test against. I agree that this is definitely a problem, but
+it shouldn&#x27;t deter people from writing proper tests to ensure their game is
+working properly. The idea for a test is to ensure that functionality is not
+broken, to assure that when a bug is fixed, it remains fixed. However with this
+current setup, you have to go explicitly out of your way to properly build a
+reasonable test suite for your game logic.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;boilerplate-code&quot;&gt;Boilerplate Code&lt;&#x2F;h3&gt;
+&lt;p&gt;Unity&#x27;s base system makes it easy to do certain tasks, but at the same time,
+they promote bad practices. For example, exposing a varible to the editor
+requires the field either to be exposed as a public field, or be annotated with
+the &lt;code&gt;SerializeField&lt;&#x2F;code&gt; attribute. The former is an anti-pattern, and the latter
+requires get-only fields to be wrapped in a public get-only property. For
+example:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;cs&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-cs &quot;&gt;&lt;code class=&quot;language-cs&quot; data-lang=&quot;cs&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; The Unity advised way, bad practice in C#
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;public int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ExposedField &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;23&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Good practice, but much more boilerplate
+&lt;&#x2F;span&gt;&lt;span&gt;[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;SerializeField&lt;&#x2F;span&gt;&lt;span&gt;]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;private int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_exposedField &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;23&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;public int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ExposedField &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;get &lt;&#x2F;span&gt;&lt;span&gt;{ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_exposedField&lt;&#x2F;span&gt;&lt;span&gt;; }
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;private &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;set &lt;&#x2F;span&gt;&lt;span&gt;{ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;_exposedField &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;; }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This makes the code less readable, and makes the process confusing to both new and
+experienced programmers.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;cs&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-cs &quot;&gt;&lt;code class=&quot;language-cs&quot; data-lang=&quot;cs&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; This is what it could be instead. (Assumes updated Mono)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Better yet, it could even go without the attribute,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; and just serialize all public serializable properties
+&lt;&#x2F;span&gt;&lt;span&gt;[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;SerializeProperty&lt;&#x2F;span&gt;&lt;span&gt;]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;public int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ExposedField &lt;&#x2F;span&gt;&lt;span&gt;{ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;get&lt;&#x2F;span&gt;&lt;span&gt;; } = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;23&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;async-support&quot;&gt;Async Support&lt;&#x2F;h3&gt;
+&lt;p&gt;Asynchronous programming in Unity has traditionally done via Coroutines, which
+are a thin wrapper around C#&#x27;s iterator blocks, checked at fixed times in the
+engine&#x27;s execution order.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;cs&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-cs &quot;&gt;&lt;code class=&quot;language-cs&quot; data-lang=&quot;cs&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Starting coroutines requires calling the
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; MonoBehaviour method, StartCoroutine
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;StartCoroutine&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;TestCoroutine&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;5&lt;&#x2F;span&gt;&lt;span&gt;));
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Coroutines return an IEnumerator
+&lt;&#x2F;span&gt;&lt;span&gt;IEnumerator &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;TestCoroutine&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;y&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Run synchronous code
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;x &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;y &lt;&#x2F;span&gt;&lt;span&gt;+ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;5&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Yielding anything other particular yield
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; instructions causes the coroutine to wait a
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; single frame.
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;yield return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;null&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Yield instructions customize how long to yield
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; execution.
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;yield return &lt;&#x2F;span&gt;&lt;span&gt;new WaitForSeconds(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;4&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Yielding another coroutine
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;There are a number of problems with this approach to asynchronous programming:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Yielding doesn&#x27;t actually release control over the game&#x27;s main thread. It
+simply tells it to poll for whether the yield instruction is over, and
+continue normal execution when it&#x27;s done.&lt;&#x2F;li&gt;
+&lt;li&gt;Coroutines are not easily composable.&lt;&#x2F;li&gt;
+&lt;li&gt;Since they are required to return a &lt;code&gt;IEnumerator&lt;&#x2F;code&gt;, Coroutines cannot return
+anything, and must influence the state of the game purely through the side
+effects of the function itself.&lt;&#x2F;li&gt;
+&lt;li&gt;The &lt;code&gt;StartCoroutine&lt;&#x2F;code&gt; forces all asynchronous programming to be tied to a
+MonoBehaviour.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The very fact that there multiple promise libraries and Coroutine enhancing packages
+on the Unity Asset store and Github is a good sign that there are serious issues
+with how Unity handles async functionality.&lt;&#x2F;p&gt;
+&lt;p&gt;The ultimate end-all-be-all solution would to privde full
+&lt;code&gt;System.Threading.Tasks&lt;&#x2F;code&gt; support within Unity, along with the &lt;code&gt;async&lt;&#x2F;code&gt;&#x2F;&lt;code&gt;await&lt;&#x2F;code&gt;
+syntax provided by C# 5.0. This further reinforces the need for Unity to update
+it&#x27;s Mono runtime.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;multithreading-support&quot;&gt;Multithreading Support&lt;&#x2F;h3&gt;
+&lt;p&gt;Unity is notorious for being a single threaded engine. Numerous API calls will
+error out if called from any thread other than the main thread. Some things as
+simple as accessing a &lt;code&gt;Transform&lt;&#x2F;code&gt;&#x27;s position from a worker thread throws
+show-stopping errors. It&#x27;s pretty clear why they did it too:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Adding thread-safe checks to various Unity components can have a negative
+impact on single-threaded performance.&lt;&#x2F;li&gt;
+&lt;li&gt;For new game developers and new programmers, learning and managing the
+nuances of multithreaded code can be highly negative experince.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;These problems are supposed to be allievated by the supposed job system that
+Unity Technologies has been working on since 2014. While we have seen the
+fruit of their work on it through improvements to the rendering and
+particle systems, there has been no information regarding when it will be
+released to the public, or how might developer utilize it.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;case-3-no-multiproject-management&quot;&gt;Case 3: No Multiproject Management&lt;&#x2F;h1&gt;
+&lt;p&gt;Right now, Unity staticaly compiles all assets into one cohesive standalone
+build. This holds for both code and non-code assets. All C# code usually is
+compiled into Assembly-CSharp.dll. All assets are built into statically packed
+resouce packs. Other code must be included in the form of compiled DLLs in the
+source files. This produces particular issues when the project&#x27;s codebase grows
+larger and larger. The instant reloads slowly get longer and longer,
+particularly as Unity&#x27;s compiler currently does not support incremental
+compilation: it spends a large amount of time compiling code that usually never
+chnages.&lt;&#x2F;p&gt;
+&lt;p&gt;On the asset side, Asset Bundles do largely resolve the monolithic static build
+issue; however, they introduce a whole new layer of complexity most games and
+projects cannot afford to pay attention to, and the support from the game
+engine, deployment services, and the community as a whole leaves a lot to be
+desired.&lt;&#x2F;p&gt;
+&lt;p&gt;For anyone working with a rapidly growing, or already large project, it&#x27;s
+painfully obvious how Unity doesn&#x27;t scale well here.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;case-4-no-package-manager&quot;&gt;Case 4: No Package Manager&lt;&#x2F;h1&gt;
+&lt;p&gt;This ties into the previous point: Unity has no support for packaged inclusion
+of non-local content. Currently Unity&#x27;s package system is simply a compressed
+archive of assets and their respective project paths, which Unity simply unpacks
+into the main project for it to be statically compiled into the end product. Virtually
+every other software system has some form of package manager that allows maintainers to
+define a simple text list of dependenices and their versions a project depends
+on: Java&#x2F;Gradle, NodeJS&#x2F;npm, C#&#x2F;Nuget, etc.&lt;&#x2F;p&gt;
+&lt;p&gt;Currently, managing large projects with a large number of dependencies requires
+directly copying the source into source control, keeping compiled binaries of
+said dependencies in source control, or using methods like git submodules. This
+makes updating dependencies difficult, complicates the source control workflow,
+or both.&lt;&#x2F;p&gt;
+&lt;p&gt;The simplest solution is a first party integration between Unity and Nuget:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;This would allow developers to remove &quot;hard-included&quot; dependencies from their repos.&lt;&#x2F;li&gt;
+&lt;li&gt;Developers can then push common shared packages between projects.&lt;&#x2F;li&gt;
+&lt;li&gt;Allows easy inclusion and use of general purpose third party dependencies like
+&lt;code&gt;Newtonsoft.Json&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h2&gt;
+&lt;p&gt;Despite all the problems I&#x27;ve enumerated with Unity, it is a great engine with a
+great community of developers, creating some of the best games out there today.There
+are just a few notable pain points in working with the engine that deserve a
+serious look at. Pain points that I sincerely hope get dealt with sooner rather
+htan later.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
