@@ -38,15 +38,5 @@
     <section class="section container post content">
       <p>{{ page.content | safe }}</p>
   {% endif %}
-  {% if not page.extra.disable_comments %}
-    <script src="https://utteranc.es/client.js"
-            repo="james7132/jliu.xyz"
-            issue-term="og:title"
-            label="comments"
-            theme="photon-dark"
-            crossorigin="anonymous"
-            async>
-    </script>
-  {% endif %}
   </section>
 {% endblock content %}

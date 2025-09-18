@@ -61,9 +61,9 @@ Almost all of the following software are hosted via
  - [Hastebin](https://github.com/toptal/haste-server) - A simple pastebin
    alternative for sharing text dumps.
  - I self-host a personal file server, which is publicly readable at
-   https://files.jliu.xyz via SMB with [nginx](https://www.nginx.com/).
+   https://files.no-bull.sh via SMB with [nginx](https://www.nginx.com/).
  - I've set up [ShareX](https://getsharex.com/) to upload screenshots to
-   https://i.jliu.xyz/ using the same upload path through SMB.
+   https://i.no-bull.sh/ using the same upload path through SMB.
 
 ## Monitoring
  - [Grafana](https://grafana.com/) - A dashboarding service that integrates with

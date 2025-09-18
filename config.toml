@@ -1,6 +1,6 @@
-base_url = "https://jliu.xyz"
+base_url = "https://no-bull.sh"
 
-title = "James Liu"
+title = "no bull.sh"
 default_language = "en"
 
 compile_sass = true
@@ -14,4 +14,4 @@ feed_filenames = ["atom.xml"]
 highlight_code = true
 
 [extra]
-site_name = "James Liu"
+site_name = "no bull.sh"

@@ -1,11 +1,8 @@
 +++
 title = "About Me"
-
-[extra]
-disable_comments = true
 +++
 
-I'm James Liu, a software engineer. Currently living in the San Francisco Bay
+Hi! I'm James, a software engineer, currently living in the San Francisco Bay
 Area.
 
 I was born with [infantile nystagmus

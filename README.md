@@ -1,4 +1,4 @@
-# jliu.xyz
+# no-bull.sh
 
 My personal website. Built with [zola](https://www.getzola.org/),
 [SponsorKit](https://github.com/antfu/sponsorkit), and GitHub Pages.
