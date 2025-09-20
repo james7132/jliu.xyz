@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://no-bull.sh/</loc>
+    </url>
+    <url>
+        <loc>https://no-bull.sh/about/</loc>
+    </url>
+    <url>
+        <loc>https://no-bull.sh/blog/</loc>
+    </url>
+    <url>
+        <loc>https://no-bull.sh/blog/life-being-transportationally-disabled/</loc>
+        <lastmod>2019-05-13</lastmod>
+    </url>
+    <url>
+        <loc>https://no-bull.sh/homelab/</loc>
+    </url>
+</urlset>
